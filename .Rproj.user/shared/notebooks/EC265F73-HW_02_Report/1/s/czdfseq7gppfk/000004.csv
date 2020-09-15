@@ -1,0 +1,5 @@
+"0",""
+"0","#Table"
+"0",""
+"0","lead_iq %>% group_by(Smelter) %>% mutate(median_iq=median(IQ, na.rm=TRUE)) %>%  select(median_iq) %>% unique() %>% knitr::kable(., col.names = c(""Smelter"","
+"0","                           ""Median IQ""),caption = ""Nice Table Title"") "
