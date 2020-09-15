@@ -23,6 +23,14 @@ lead_iq = read.csv("~/Desktop/Steinhart_Project_01./Data Raw/lead-iq-01.csv")
 
 ```
 
+
+# Update to remove 999 outlier
+
+```{r}
+lead_iq = lead_iq %>% filter(IQ<=200)
+```
+
+
 # Graphs
 
 ```{r}
@@ -39,7 +47,7 @@ lead_iq %>% group_by(Smelter) %>% mutate(median_iq=median(IQ, na.rm=TRUE)) %>%  
 # Graph and Table explanation
 
 ```{r}
-print("The graph that I chose is a boxplot that depicts the IQ data by the variable, Smelter, which consists of two categories: far and near. From the boxplot, we can see that the far category has a few outliers but one clear outlier that is not an accurate representation of an individual's IQ. An IQ of 131 or greater is considered very superior (https://www.healthline.com/health/what-is-considered-a-high-iq#whats-a-high-iq). Thus, an IQ of 1000 is likely a data entry error or some other type of error. The table is a simple representation of the median of IQ for each category. The median of the far smelter is 93 and the mean of the near smelter is about 88.") 
+print("The graph that I chose is a boxplot that depicts the IQ data by the variable, Smelter, which consists of two categories: far and near. From the boxplot, we can see that the far category has a few outliers but one clear outlier (999) that is not an accurate representation of an individual's IQ. **After a conversation with the researcher, this outlier has been removed.**  An IQ of 131 or greater is considered very superior (https://www.healthline.com/health/what-is-considered-a-high-iq#whats-a-high-iq). Thus, an IQ of 1000 is likely a data entry error or some other type of error. The table is a simple representation of the median of IQ for each category. The median of the far smelter is 93 and the mean of the near smelter is about 88.") 
 ```
 
 # Inline Means
