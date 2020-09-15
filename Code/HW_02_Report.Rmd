@@ -42,6 +42,7 @@ ggplot(lead_iq, aes(x=Smelter, y=IQ)) + geom_boxplot()
 
 lead_iq %>% group_by(Smelter) %>% mutate(median_iq=median(IQ, na.rm=TRUE)) %>%  select(median_iq) %>% unique() %>% knitr::kable(., col.names = c("Smelter",
                            "Median IQ"),caption = "Nice Table Title") 
+
 ```
 
 # Graph and Table explanation

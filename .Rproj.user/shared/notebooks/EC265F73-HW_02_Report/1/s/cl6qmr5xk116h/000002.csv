@@ -1,2 +1,0 @@
-"0","inline_means = lead_iq %>% group_by(Smelter) %>% mutate(mean_iq=mean(IQ, na.rm=TRUE)) %>% select(mean_iq) %>% unique()"
-"0","inline_means"
