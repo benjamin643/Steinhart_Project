@@ -1,3 +1,0 @@
-"0","#Graph showing IQ by logation status"
-"0",""
-"0","ggplot(lead_iq, aes(x=Smelter, y=IQ)) + geom_boxplot()"
