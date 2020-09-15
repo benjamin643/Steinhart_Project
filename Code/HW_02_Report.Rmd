@@ -19,7 +19,7 @@ theme_set(theme_bw() + theme(legend.position = "bottom"))
 # Data Import
 ```{r}
 lead_iq = read.csv("~/Desktop/Steinhart_Project_01./Data Raw/lead-iq-01.csv")
-
+#import lead_iq_01 data from local location on computer. 
 
 ```
 
