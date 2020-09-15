@@ -1,0 +1,1 @@
+"0","ggplot(data = titanic) + geom_bar(mapping = aes(x = Class), fill=""lightgreen"") +ggtitle(""Distribution of Class"") + theme(plot.title= element_text(size=30)) + theme(plot.title = element_text(hjust = 0.5))"

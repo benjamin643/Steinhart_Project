@@ -1,0 +1,3 @@
+"0",""
+"0","ggplot(data = titanic) + geom_bar(mapping = aes(x = Sex), fill= ""maroon3"") +ggtitle(""Distribution of Sex"") + theme(plot.title= element_text(size=30)) + theme(plot.title = element_text(hjust = 0.5))"
+"0",""

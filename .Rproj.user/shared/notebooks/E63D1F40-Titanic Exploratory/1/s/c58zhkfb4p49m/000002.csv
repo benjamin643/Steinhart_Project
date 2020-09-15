@@ -1,0 +1,1 @@
+"0","ggplot(data = titanic) + geom_bar(mapping = aes(x = Class, color=Age), fill=""white"") +ggtitle(""Bar plot of Class colored by Age"") + theme(plot.title= element_text(size=30)) + theme(plot.title = element_text(hjust = 0.5))"
